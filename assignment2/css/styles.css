@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  background-color: #871fff;
 }
 
 h1,
@@ -20,23 +21,48 @@ p {
 }
 
 .content {
-  width: 80%;
+  width: 90%;
   height: 100%;
   text-align: center;
   margin: auto;
+  background-color: #fff;
 }
 .content p {
   font-size: 15px;
+  width: 80%;
+  margin: 0 auto;
 }
-.content img {
+.content .home_img {
   width: 600px;
   height: 400px;
 }
+.content .ps4_controller {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+.content .ps_content {
+  text-align: left;
+  display: inline;
+}
+.content .xbox_controller {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+.content .xbox_content {
+  text-align: left;
+  display: inline;
+}
 
 nav {
-  width: 100%;
+  width: 90%;
   height: 50px;
   display: flex;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
 }
 nav a {
   text-align: center;
