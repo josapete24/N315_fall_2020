@@ -20,6 +20,12 @@ function initListeners(){
         if (e.currentTarget.id == "products") {
             MODEL.getProducts(showText);
         }
+        if (e.currentTarget.id == "about") {
+            MODEL.getAbout(showText);
+        }
+        if (e.currentTarget.id == "contact") {
+            MODEL.getContact(showText);
+        }
         //This syntax is called template literal
         //$(".content").html(`<h1>This is a variable name ${btnId}</h1>`);
     });

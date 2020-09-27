@@ -41,6 +41,7 @@ p {
   height: 200px;
   float: left;
   margin-right: 20px;
+  margin-left: 140px;
 }
 .content .ps_content {
   text-align: left;
@@ -50,10 +51,42 @@ p {
   float: right;
   width: 200px;
   height: 200px;
+  margin-top: 60px;
+  margin-right: 125px;
 }
 .content .xbox_content {
   text-align: left;
   display: inline;
+}
+.content .xbox_content h2 {
+  margin-top: 50px;
+  margin-left: 140px;
+}
+.content .about_img {
+  float: right;
+  width: 600px;
+  height: 500px;
+  margin-left: 20px;
+  margin-right: 130px;
+}
+.content .about_content {
+  display: inline;
+  text-align: left;
+}
+.content .contact_content {
+  text-align: left;
+}
+.content .laptop_img {
+  margin-top: 40px;
+  margin-right: 10px;
+  width: 450px;
+  height: 300px;
+}
+.content .phone_img {
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 450px;
+  height: 300px;
 }
 
 nav {
