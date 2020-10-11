@@ -2,3 +2,6 @@
  
 ## Link for assignment 2
 https://in-info-web4.informatics.iupui.edu/~josapete/assignment2/
+
+## Link for assignment 3
+https://in-info-web4.informatics.iupui.edu/~josapete/assignment3/
