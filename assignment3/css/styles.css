@@ -11,7 +11,6 @@ body {
 
 #app {
   font-size: 15px;
-  height: 100%;
   width: 80%;
   margin: 0 auto;
 }
@@ -43,6 +42,8 @@ footer {
   background-color: #000;
   display: flex;
   width: 100%;
+  bottom: 0;
+  position: relative;
 }
 footer p {
   margin: auto;
@@ -117,4 +118,5 @@ hr {
   margin: 0 auto;
   margin-right: 20px;
   margin-top: 10px;
+  margin-bottom: 150px;
 }
