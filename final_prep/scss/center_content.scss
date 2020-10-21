@@ -1,3 +1,4 @@
+//background image of the final with black gradient over it
 .background-content-center{
         height: 100%;
         //background-image: url(../images/backrgound.jpg);
@@ -11,6 +12,7 @@
         justify-content: center;
         align-items: center;
 
+    //Centering the aqua box into the center of the background image    
     .callout {
         position: relative;
         width: 400px;
@@ -26,6 +28,7 @@
             text-align: center;
         }
 
+        //Puts the purple center into the upper right corner of the aqua box
         .circle {
             position: absolute;
             width:100px;
@@ -37,6 +40,7 @@
         }
     }    
 
+    //Another aqua box to put next to the first aqua box
     .callout2 {
         width: 400px;
         height: 300px;
