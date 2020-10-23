@@ -92,6 +92,7 @@ nav .links {
   height: 80px;
   background-color: #006efd;
   display: flex;
+  visibility: visible;
 }
 nav .links a {
   margin: auto;
