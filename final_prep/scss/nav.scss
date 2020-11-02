@@ -38,6 +38,14 @@ nav {
     height: 80%;
 }
 
+@media all and (max-width:1600px){
+    nav {
+        .links{
+            visibility: visible;
+        }
+    }
+}
+
 @media all and (max-width:1280px){
     nav {
         height: 30px;
