@@ -1,0 +1,45 @@
+.hero {
+  height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.5),
+      rgba(242, 92, 84, 0.5)
+    ),
+    url(../imgs/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .callout {
+    position: relative;
+    width: 358px;
+    height: 358px;
+    background-color: #FFD972;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+    .circle {
+      position: absolute;
+      z-index: -1;
+      width: 168px;
+      height: 168px;
+      background-color: purple;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+    }
+  }
+    
+    //Puts the purple center into the upper right corner of the aqua box
+
+
+}
