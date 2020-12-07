@@ -11,8 +11,9 @@ body {
 }
 html #app,
 body #app {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  display: flex;
 }
 
 h1,
@@ -26,16 +27,18 @@ p {
 }
 
 .hero {
-  height: 100%;
+  height: 800px;
+  width: 100%;
   background-image: linear-gradient(to right, rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../imgs/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 .hero .callout {
-  position: relative;
+  position: absolute;
   width: 358px;
   height: 358px;
   background-color: #FFD972;
@@ -45,17 +48,552 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Caveat", cursive;
+}
+.hero .callout h2 {
+  font-size: 30px;
 }
 .hero .callout p {
   text-align: center;
+  font-size: 20px;
+  width: 164px;
 }
-.hero .callout .circle {
+.hero .callout2 {
   position: absolute;
-  z-index: -1;
   width: 168px;
   height: 168px;
-  background-color: purple;
+  background-color: #FCBCB8;
   border-radius: 50%;
+  top: -40px;
+  right: -80px;
+  z-index: -100;
+}
+.hero .callout2 p {
+  margin: auto;
+  margin-top: 60px;
+  width: 105px;
+  font-size: 12px;
+  height: 38px;
+  z-index: -1;
+}
+
+nav {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  padding: 10px;
+  font-family: "Caveat", cursive;
+}
+nav .logo {
+  width: 250px;
+  height: 55px;
+  margin: auto;
+  margin-top: 45px;
+  margin-right: 50%;
+}
+nav #login {
+  background-color: #FFD972;
+  font-size: 25px;
+  width: 158px;
+  height: 52px;
+  border-style: none;
+  border-radius: 25px;
+  padding: 10px 40px;
+  cursor: pointer;
+  box-shadow: 1px 10px rgba(0, 0, 0, 0.1);
+}
+nav .navicon {
+  width: 30px;
+  height: 40px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 60px;
   top: 0;
   right: 0;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+.navMobileView {
+  width: 50%;
+  height: 80%;
+}
+
+@media all and (max-width: 1600px) {
+  nav .links {
+    visibility: visible;
+  }
+}
+@media all and (max-width: 1400px) {
+  nav .links {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    display: none;
+  }
+  nav .logo {
+    visibility: visible;
+  }
+  nav .navicon {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .navicon .line {
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 2px;
+  }
+}
+footer {
+  margin: 0 auto;
+  margin-top: -40px;
+  width: 90%;
+  bottom: 0;
+  z-index: 1;
+}
+footer p {
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
+footer .links {
+  margin-left: 350px;
+  font-size: 15px;
+}
+footer .copyright {
+  float: left;
+  font-size: 15px;
+  z-index: 999;
+}
+footer .facebook {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  margin-top: -10px;
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  z-index: 999;
+}
+footer .instagram {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: -10px;
+  float: right;
+  margin-bottom: 0px;
+  z-index: 999;
+}
+
+@media all and (max-width: 1100px) {
+  footer .links {
+    margin-left: 10px;
+  }
+}
+@media all and (max-width: 760px) {
+  footer .copyright {
+    font-size: 10px;
+  }
+  footer .links {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  footer .facebook {
+    margin-right: 20px;
+  }
+}
+.recipe_hero {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(167, 232, 189, 0.5), rgba(167, 232, 189, 0.5)), url(../imgs/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  position: relative;
+}
+.recipe_hero .browse_recipes {
+  margin: 0 auto;
+  margin-top: 175px;
+  width: 80%;
+  padding-bottom: 100px;
+}
+.recipe_hero .browse_recipes h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: "Caveat", cursive;
+}
+.recipe_hero .browse_recipes p {
+  width: 170px;
+}
+.recipe_hero .browse_recipes .pizza {
+  float: left;
+}
+.recipe_hero .browse_recipes .burger {
+  float: right;
+}
+.recipe_hero .browse_recipes .biryani {
+  float: left;
+  margin-top: 50px;
+}
+.recipe_hero .browse_recipes .chow_mein {
+  margin-top: 50px;
+  float: right;
+}
+.recipe_hero .browse_recipes .serving .serving_img {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  float: left;
+}
+.recipe_hero .browse_recipes .serving p {
+  float: right;
+}
+.recipe_hero .browse_recipes img {
+  width: 300px;
+  height: 260px;
+  border-radius: 25px;
+  object-fit: cover;
+  float: left;
+}
+.recipe_hero .browse_recipes .recipe {
+  width: 225px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  float: right;
+}
+.recipe_hero .browse_recipes .recipe h2 {
+  width: 130px;
+  font-size: 15px;
+  border-bottom: 3px solid #000;
+  margin: auto;
+  margin-top: 50px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+.recipe_hero .browse_recipes .recipe p {
+  width: 142px;
+  font-size: 9px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+.recipe_hero .browse_recipes .recipe .time_and_serving {
+  text-align: center;
+}
+.recipe_hero .browse_recipes .recipe .time_and_serving .time_img {
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+.recipe_hero .browse_recipes .recipe .time_and_serving .serving_img {
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+@media all and (max-width: 1350px) {
+  .recipe_hero {
+    height: 100%;
+    justify-content: center;
+  }
+
+  .browse_recipes {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .browse_recipes h1 {
+    margin: auto;
+  }
+  .browse_recipes .pizza {
+    float: left;
+    margin: 0 auto;
+  }
+  .browse_recipes .pizza .recipe {
+    float: left;
+  }
+  .browse_recipes .burger {
+    margin: 0 auto;
+    margin-top: 50px;
+    float: left;
+  }
+  .browse_recipes .burger .recipe {
+    float: left;
+  }
+  .browse_recipes .biryani {
+    margin: 0 auto;
+    float: left;
+    margin-top: 50px;
+  }
+  .browse_recipes .biryani .recipe {
+    float: left;
+  }
+  .browse_recipes .chow_mein {
+    margin: 0 auto;
+    float: left;
+    margin-top: 50px;
+  }
+  .browse_recipes .chow_mein .recipe {
+    float: left;
+  }
+}
+@media all and (max-width: 671px) {
+  .browse_recipes .pizza img {
+    width: 298px;
+    height: 150px;
+  }
+  .browse_recipes .pizza .recipe {
+    width: 298px;
+    height: 180px;
+    text-align: center;
+  }
+  .browse_recipes .pizza .recipe h2 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .browse_recipes .pizza .recipe p {
+    font-size: 8px;
+  }
+  .browse_recipes .pizza .time_and_serving .time_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .pizza .time_and_serving .serving_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .burger img {
+    width: 298px;
+    height: 150px;
+  }
+  .browse_recipes .burger .recipe {
+    width: 298px;
+    height: 180px;
+    text-align: center;
+  }
+  .browse_recipes .burger .recipe h2 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .browse_recipes .burger .recipe p {
+    font-size: 8px;
+  }
+  .browse_recipes .burger .time_and_serving .time_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .burger .time_and_serving .serving_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .biryani img {
+    width: 298px;
+    height: 150px;
+  }
+  .browse_recipes .biryani .recipe {
+    width: 298px;
+    height: 180px;
+    text-align: center;
+  }
+  .browse_recipes .biryani .recipe h2 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .browse_recipes .biryani .recipe p {
+    font-size: 8px;
+  }
+  .browse_recipes .biryani .time_and_serving .time_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .biryani .time_and_serving .serving_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .chow_mein img {
+    width: 298px;
+    height: 150px;
+  }
+  .browse_recipes .chow_mein .recipe {
+    width: 298px;
+    height: 180px;
+    text-align: center;
+  }
+  .browse_recipes .chow_mein .recipe h2 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .browse_recipes .chow_mein .recipe p {
+    font-size: 8px;
+  }
+  .browse_recipes .chow_mein .time_and_serving .time_img {
+    width: 20px;
+    height: 20px;
+  }
+  .browse_recipes .chow_mein .time_and_serving .serving_img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.account {
+  height: 800px;
+  width: 100%;
+  background-color: #FFD972;
+  margin: auto;
+  display: flex;
+}
+.account .recipe {
+  height: 100%;
+}
+.account p {
+  font-size: 12px;
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+}
+.account .ltext {
+  width: 206px;
+  border-style: none;
+  background-color: transparent;
+  border-bottom: 3px solid #000;
+  margin-top: 50px;
+}
+.account .stext {
+  width: 250px;
+  border-style: none;
+  background-color: transparent;
+  border-bottom: 3px solid #000;
+  margin-top: 50px;
+}
+.account input::placeholder {
+  font-size: 12px;
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+.account .login {
+  text-align: center;
+  width: 206px;
+  float: left;
+  margin: auto;
+}
+.account .login h2 {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.account .login #log {
+  border-style: none;
+  background-color: #FFD972;
+  font-size: 25px;
+  width: 209px;
+  height: 52px;
+  border-style: none;
+  border-radius: 25px;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 1px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Caveat", cursive;
+}
+.account .sign_up {
+  margin: auto;
+  text-align: auto;
+  width: 206px;
+}
+.account .sign_up h2 {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.account .sign_up #sign {
+  border-style: none;
+  background-color: #FFD972;
+  font-size: 25px;
+  width: 250px;
+  height: 52px;
+  border-style: none;
+  border-radius: 25px;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 1px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Caveat", cursive;
+}
+
+.add {
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.add input {
+  width: 980px;
+  height: 60px;
+  margin-top: 50px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+}
+.add ::placeholder {
+  color: #000;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+.add h1 {
+  font-size: 21px;
+  font-family: "Caveat", cursive;
+}
+.add p {
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-family: "Lato", sans-serif;
+}
+.add .create_recipe {
+  width: 422px;
+  height: 52px;
+  margin: 100px 0px;
+  margin-left: 250px;
+  background-color: #EFA7A7;
+  text-decoration: none;
+  border: none;
+  border-radius: 26px;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Btn {
+  background-color: #EFA7A7;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 940px;
+  margin-top: -50px;
+  position: absolute;
+  font-size: 20px;
 }

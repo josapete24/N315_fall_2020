@@ -1,0 +1,331 @@
+.recipe_hero {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(167, 232, 189, 0.5),
+      rgba(167, 232, 189, 0.5)
+    ),
+    url(../imgs/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  position: relative;
+
+  .browse_recipes {
+    margin: 0 auto;
+    margin-top: 175px;
+    width: 80%;
+    padding-bottom: 100px;
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      font-family:  'Caveat', cursive;
+    }
+
+    p {
+      width: 170px;
+    }
+
+    .pizza {
+      float: left;
+    }
+
+    .burger {
+      float: right;
+
+    }
+
+    .biryani {
+      float: left;
+      margin-top: 50px;
+    }
+
+    .chow_mein {
+      margin-top: 50px;
+      float: right
+    }
+
+    .serving {
+      .serving_img {
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+        float: left;
+      }
+
+      p {
+        float: right;
+      }
+    }
+
+    img {
+      width: 300px;
+      height: 260px;
+      border-radius: 25px;
+      object-fit: cover;
+      float: left;
+    }
+
+    .recipe {
+      width: 225px;
+      height: 260px;
+      background-color: #fff;
+      border-radius: 25px;
+      text-align: center;
+      float: right;
+
+      h2 {
+        width: 130px;
+        font-size: 15px;
+        border-bottom: 3px solid #000;
+        margin: auto;
+        margin-top: 50px;
+        text-align: left;
+        font-family: 'Lato', sans-serif;;
+      }
+
+      p {
+        width: 142px;
+        font-size: 9px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+      }
+
+      .time_and_serving {
+        text-align: center;
+
+        .time_img {
+          width: 30px;
+          height: 30px;
+          margin-top: -10px;
+          margin-left: 20px;
+          margin-right: 20px;
+          float: left;
+        }
+
+        .serving_img {
+          width: 30px;
+          height: 30px;
+          margin-top: -10px;
+          margin-left: 20px;
+          margin-right: 20px;
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width:1350px){
+
+  .recipe_hero {
+    height: 100%;
+    justify-content: center;
+  }
+
+  .browse_recipes {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      margin: auto;
+    }
+
+    .pizza {
+      float: left;
+      margin: 0 auto;
+
+      .recipe {
+        float: left;
+      }
+    }
+
+    .burger {
+      margin: 0 auto;
+      margin-top: 50px;
+      float: left;
+
+      .recipe {
+        float: left;
+      }
+    }
+
+    .biryani {
+      margin: 0 auto;
+      float: left;
+      margin-top: 50px;
+
+      .recipe {
+        float: left;
+      }
+    }
+
+    .chow_mein {
+      margin: 0 auto;
+      float: left;
+      margin-top: 50px;
+
+      .recipe {
+        float: left;
+      }
+    }
+  }
+}
+
+@media all and (max-width:671px){
+
+      .browse_recipes {
+
+        .pizza {
+        img {
+          width: 298px;
+          height: 150px;
+        }
+
+        .recipe {
+          width: 298px;
+          height: 180px;
+          text-align: center;
+
+          h2 {
+            margin-top: 10px;
+            font-size: 10px;
+          }
+          p {
+            font-size: 8px;
+          }
+        }
+
+        .time_and_serving {
+  
+          .time_img {
+            width: 20px;
+            height: 20px;
+          }
+  
+          .serving_img {
+            width: 20px;
+            height: 20px;
+
+          }
+      }
+
+
+      }
+
+      .burger {
+        img {
+          width: 298px;
+          height: 150px;
+        }
+
+        .recipe {
+          width: 298px;
+          height: 180px;
+          text-align: center;
+
+          h2 {
+            margin-top: 10px;
+            font-size: 10px;
+          }
+          p {
+            font-size: 8px;
+          }
+        }
+
+        .time_and_serving {
+  
+          .time_img {
+            width: 20px;
+            height: 20px;
+          }
+  
+          .serving_img {
+            width: 20px;
+            height: 20px;
+
+          }
+      }
+      }
+
+      .biryani {
+        img {
+          width: 298px;
+          height: 150px;
+        }
+
+        .recipe {
+          width: 298px;
+          height: 180px;
+          text-align: center;
+
+          h2 {
+            margin-top: 10px;
+            font-size: 10px;
+          }
+          p {
+            font-size: 8px;
+          }
+        }
+
+        .time_and_serving {
+  
+          .time_img {
+            width: 20px;
+            height: 20px;
+          }
+  
+          .serving_img {
+            width: 20px;
+            height: 20px;
+
+          }
+      }
+      }
+
+      .chow_mein {
+        img {
+          width: 298px;
+          height: 150px;
+        }
+
+        .recipe {
+          width: 298px;
+          height: 180px;
+          text-align: center;
+
+          h2 {
+            margin-top: 10px;
+            font-size: 10px;
+          }
+          p {
+            font-size: 8px;
+          }
+        }
+
+        .time_and_serving {
+  
+          .time_img {
+            width: 20px;
+            height: 20px;
+          }
+  
+          .serving_img {
+            width: 20px;
+            height: 20px;
+
+          }
+      }
+      }
+    }
+  }

@@ -1,0 +1,64 @@
+.add {
+    margin: 0 auto;
+    margin-top: 200px;
+
+
+    input {
+    width: 980px;
+    height: 60px;
+    margin-top: 50px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    }
+
+    ::placeholder {
+        color: #000;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h1 {
+        font-size: 21px;
+        font-family: 'Caveat', cursive;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 0 auto;
+        margin-top: 150px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .create_recipe {
+        width: 422px;
+        height: 52px;
+        margin: 100px 0px;
+        margin-left: 250px;
+        background-color: #EFA7A7;
+        text-decoration: none;
+        border: none;
+        border-radius: 26px;
+        font-size: 25px;
+        cursor: pointer;
+        box-shadow: 1px 10px rgba($color: #000, $alpha: .1);
+    }
+}
+
+
+.Btn{
+    background-color: #EFA7A7;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 940px;
+    margin-top: -50px;
+    position: absolute;
+    font-size: 20px;
+}
